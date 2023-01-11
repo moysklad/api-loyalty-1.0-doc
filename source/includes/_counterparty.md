@@ -19,6 +19,7 @@
 + **discountCardNumber** `string` - Номер дисконтной карты
 + **phone** `string` - Номер телефона в произвольном формате
 + **email** `string` - Почтовый адрес
++ **syncId** `string` - Внешний идентификатор покупателя
 
 > **`POST`** 
 > /counterparty
@@ -50,7 +51,8 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "name": "Иванов Иван Иванович",
   "discountCardNumber": "MTIzNDU2Nzg5MA",
   "phone": "+7 555 123 4568",
-  "email": "email@example.com"
+  "email": "email@example.com",
+  "syncId": "6ebefb74-f6e3-4ef1-b155-5232a2ae396a"
 }
 ```
 

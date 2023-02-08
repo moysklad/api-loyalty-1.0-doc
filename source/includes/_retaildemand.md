@@ -131,11 +131,11 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
         + Members 
             + EARNING
             + SPENDING
-    + **agentBonusBalance**: `number` - Баланс баллов покупателя до продажи
-    + **bonusValueToSpend**: `number` - Сколько может быть списано баллов за продажу
-    + **bonusValueToEarn**: `number` - Сколько может быть начислено баллов за продажу
-    + **agentBonusBalanceAfter**: `number` - Баланс баллов покупателя после продажи
-    + **paidByBonusPoints**: `number` - Сумма оплаченная бонусами (2 зн. после запятой)
+    + **agentBonusBalance**: `number` - Баланс баллов покупателя до продажи.
+    + **bonusValueToSpend**: `number` - Сколько будет списано баллов за продажу. В случае отсутствия/null поля **preferredBonusToSpend** стоит возвращать максимально доступную сумму для списания по этой продаже.
+    + **bonusValueToEarn**: `number` - Сколько может быть начислено баллов за продажу.
+    + **agentBonusBalanceAfter**: `number` - Баланс баллов покупателя после продажи.
+    + **paidByBonusPoints**: `number` - Сумма оплаченная бонусами (2 знака после запятой).
     + **receiptExtraInfo**: `string` - Дополнительный текст для вывода в чеке, может содержать переносы строк.
 
 > **Response**   

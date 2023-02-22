@@ -26,6 +26,7 @@
     + **id**: `string` - Идентификатор покупателя `Необходимое`
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных
+        + **syncId** `string` - Внешний идентификатор товара/услуги
         + **meta** `object`
             + **href**: `string` - Идентификатор товара/услуги `Необходимое`
             + **id**: `string` - Идентификатор товара/услуги `Необходимое`
@@ -76,6 +77,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "positions": [
     {
       "assortment": {
+        "syncId": "f085d67e-6eae-11e6-8a84-bc520403352a",
         "meta": {
           "href": "https://online.moysklad.ru/api/remap/1.1/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
           "id": "9c56720c-e8a7-4fdc-aea4-7104f28207be"

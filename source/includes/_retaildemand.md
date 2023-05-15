@@ -139,6 +139,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     + **agentBonusBalanceAfter**: `number` - Баланс баллов покупателя после продажи.
     + **paidByBonusPoints**: `number` - Сумма оплаченная бонусами (2 знака после запятой).
     + **receiptExtraInfo**: `string` - Дополнительный текст для вывода в чеке, может содержать переносы строк.
++ **needVerification** `boolean` - Флаг, показывающий нужно ли запросить код для проверки личности контрагента.
 
 > **Response**   
 > 200 (application/json)
@@ -194,7 +195,62 @@ Content-Type:application/json
     "agentBonusBalanceAfter": 650,
     "paidByBonusPoints": 0,
     "receiptExtraInfo": "Спасибо за участие в нашей программе!"
-  }
+  },
+  "needVerification": false
+}
+```
+
+### Запрос кода подтверждения списания баллов
+
+Метод предназначен для запроса кода у внешней бонусной программы с целью подтверждения списания бонусов.
+
+#### Атрибуты запроса
+
++ **counterpartyId** `string` `Необходимое` - Идентификатор контрагента, необходимый для синхронизации.
++ **phone** `string` - Телефонный номер покупателя, указанный в карточке контрагента.
+
+> **`POST`**
+> /retaildemand/verify
+
+> **Request**
+
+> Headers
+
+```
+Content-Type:application/json
+Lognex-Discount-API-Auth-Token:Токен авторизации
+```
+
+> Body
+
+```json
+{
+  "counterpartyId": "75d9ba29-2c4a-4c1c-a3a8-8db00366ac04",
+  "phone": "+79011231122"
+} 
+```
+
+#### Атрибуты ответа
++ **verificationCode** `string` `Необходимое` - Код, отправленный покупателю.
++ **timeForRepeat** `integer` - Время в секундах, по прошествии которого, можно запросить код повторно.
++ **messageForCashier** `string` - Сообщение, которое необходимо отобразить кассиру (140 символов).
+
+> **Response**   
+> 200 (application/json)
+
+> Headers
+
+```
+Content-Type:application/json
+```
+
+> Body
+
+```json
+{
+  "verificationCode":"123456",
+  "timeForRepeat": 60,
+  "messageForCashier": "Код был отправлен на номер покупателя: +79011231122"
 }
 ```
 

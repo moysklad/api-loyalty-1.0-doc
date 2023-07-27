@@ -22,6 +22,15 @@
     + **discountCardNumber** `string` - Номер скидочной карты/счета
     + **phone** `string` - Номер телефона в произвольном формате 
     + **email** `string` - Почтовый адрес 
+    + **legalFirstName** `string` - Имя контрагента
+    + **legalMiddleName** `string` - Отчество контрагента
+    + **legalLastName** `string` - Фамилия контрагента
+    + **birthDate** `date` - Дата рождения контрагента
+    + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+        + Members 
+            + MALE
+            + FEMALE
+
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных`Необходимое`
         + **meta** `object```Необходимое`
@@ -75,7 +84,12 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     "name": "Иванов Иван Иванович",
     "discountCardNumber": "MTIzNDU2Nzg5MA",
     "phone": "+7 555 123 4567",
-    "email": "email@example.com"
+    "email": "email@example.com",
+    "legalFirstName": "Иванов",
+    "legalMiddleName": "Иван",
+    "legalLastName": "Иванович",
+    "sex": "MALE",
+    "birthDate": "2023-07-14 00:00:00"
   },
   "positions": [
     {
@@ -113,6 +127,14 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     + **discountCardNumber**: `string` - Номер скидочной карты/счета
     + **phone**: `string` - Номер телефона в произвольном формате
     + **email**: `string` - Почтовый адрес  
+    + **legalFirstName** `string` - Имя контрагента
+    + **legalMiddleName** `string` - Отчество контрагента
+    + **legalLastName** `string` - Фамилия контрагента
+    + **birthDate** `date` - Дата рождения контрагента
+    + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+        + Members 
+            + MALE
+            + FEMALE
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных `Необходимое`
         + **meta** `object` `Необходимое`
@@ -162,7 +184,12 @@ Content-Type:application/json
     "name": "Иванов Иван Иванович",
     "discountCardNumber": "MTIzNDU2Nzg5MA",
     "phone": "+7 555 123 4567",
-    "email": "email@example.com"
+    "email": "email@example.com",
+    "legalFirstName": "Иванов",
+    "legalMiddleName": "Иван",
+    "legalLastName": "Иванович",
+    "sex": "MALE",
+    "birthDate": "2023-07-14 00:00:00"
   },
   "positions": [
     {
@@ -278,6 +305,14 @@ Content-Type:application/json
     + **discountCardNumber** `string` - Номер скидочной карты/счета
     + **phone** `string` - Номер телефона в произвольном формате
     + **email** `string` - Почтовый адрес
+    + **legalFirstName** `string` - Имя контрагента
+    + **legalMiddleName** `string` - Отчество контрагента
+    + **legalLastName** `string` - Фамилия контрагента
+    + **birthDate** `date` - Дата рождения контрагента
+    + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+        + Members 
+            + MALE
+            + FEMALE
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных
         + **syncId** `string` - Уникальный идентификатор, присвоенный товару/услуге при создании через Кассу МойСклад или JSON API
@@ -331,7 +366,12 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     "name": "Иванов Иван Иванович",
     "discountCardNumber": "MTIzNDU2Nzg5MA",
     "phone": "+7 555 123 4567",
-    "email": "email@example.com"
+    "email": "email@example.com",
+    "legalFirstName": "Иванов",
+    "legalMiddleName": "Иван",
+    "legalLastName": "Иванович",
+    "sex": "MALE",
+    "birthDate": "2023-07-14 00:00:00"
   },
   "positions": [
     {

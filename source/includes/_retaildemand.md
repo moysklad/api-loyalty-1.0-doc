@@ -27,9 +27,9 @@
     + **legalLastName** `string` - Фамилия контрагента
     + **birthDate** `date` - Дата рождения контрагента
     + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-      + Members
-        + MALE
-        + FEMALE
+        + Members
+            + MALE
+            + FEMALE
 
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных`Необходимое`
@@ -132,9 +132,9 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     + **legalLastName** `string` - Фамилия контрагента
     + **birthDate** `date` - Дата рождения контрагента
     + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-      + Members
-        + MALE
-        + FEMALE
+        + Members
+            + MALE
+            + FEMALE
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных `Необходимое`
         + **meta** `object` `Необходимое`
@@ -310,9 +310,9 @@ Content-Type:application/json
     + **legalLastName** `string` - Фамилия контрагента
     + **birthDate** `date` - Дата рождения контрагента
     + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-      + Members
-        + MALE
-        + FEMALE
+        + Members
+            + MALE
+            + FEMALE
 + **positions** `array` - Перечень всех позиций чека
     + **assortment** `object` - Реквизиты позиции в формате метаданных
         + **syncId** `string` - Уникальный идентификатор, присвоенный товару/услуге при создании через Кассу МойСклад или JSON API

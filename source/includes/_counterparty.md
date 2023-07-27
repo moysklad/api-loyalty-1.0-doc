@@ -24,9 +24,9 @@
 + **legalLastName** `string` - Фамилия контрагента
 + **birthDate** `date` - Дата рождения контрагента
 + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-  + Members
-    + MALE
-    + FEMALE
+    + Members
+        + MALE
+        + FEMALE
 
 + **syncId** `string` - Уникальный идентификатор, присвоенный покупателю при создании через Кассу МойСклад
 
@@ -96,9 +96,9 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
         + **legalLastName** `string` - Фамилия контрагента
         + **birthDate** `date` - Дата рождения контрагента
         + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-          + Members
-            + MALE
-            + FEMALE
+            + Members
+                + MALE
+                + FEMALE
 
 > **`GET`** 
 > /counterparty?search=9039993344
@@ -160,9 +160,9 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 + **legalLastName** `string` - Фамилия контрагента
 + **birthDate** `date` - Дата рождения контрагента
 + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-  + Members
-    + MALE
-    + FEMALE
+    + Members
+        + MALE
+        + FEMALE
 
 #### Атрибуты ответа  
 + **bonusProgram** `object` - Блок информации по баллам 

@@ -27,7 +27,7 @@
     + **legalLastName** `string` - Фамилия контрагента
     + **birthDate** `date` - Дата рождения контрагента
     + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-        + Members
+        + Members 
             + MALE
             + FEMALE
 
@@ -132,7 +132,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     + **legalLastName** `string` - Фамилия контрагента
     + **birthDate** `date` - Дата рождения контрагента
     + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-        + Members
+        + Members 
             + MALE
             + FEMALE
 + **positions** `array` - Перечень всех позиций чека
@@ -310,7 +310,7 @@ Content-Type:application/json
     + **legalLastName** `string` - Фамилия контрагента
     + **birthDate** `date` - Дата рождения контрагента
     + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
-        + Members
+        + Members 
             + MALE
             + FEMALE
 + **positions** `array` - Перечень всех позиций чека

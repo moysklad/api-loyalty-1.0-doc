@@ -19,6 +19,15 @@
 + **discountCardNumber** `string` - Номер дисконтной карты
 + **phone** `string` - Номер телефона в произвольном формате
 + **email** `string` - Почтовый адрес
++ **legalFirstName** `string` - Имя контрагента
++ **legalMiddleName** `string` - Отчество контрагента
++ **legalLastName** `string` - Фамилия контрагента
++ **birthDate** `date` - Дата рождения контрагента
++ **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+  + Members
+    + MALE
+    + FEMALE
+
 + **syncId** `string` - Уникальный идентификатор, присвоенный покупателю при создании через Кассу МойСклад
 
 > **`POST`** 
@@ -52,7 +61,12 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "discountCardNumber": "MTIzNDU2Nzg5MA",
   "phone": "+7 555 123 4568",
   "email": "email@example.com",
-  "syncId": "6ebefb74-f6e3-4ef1-b155-5232a2ae396a"
+  "syncId": "6ebefb74-f6e3-4ef1-b155-5232a2ae396a",
+  "legalFirstName": "Иванов",
+  "legalMiddleName": "Иван",
+  "legalLastName": "Иванович",
+  "birthDate": "2023-07-14 00:00:00",
+  "sex": "MALE"
 }
 ```
 
@@ -77,6 +91,14 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
         + **discountCardNumber** `string` - Номер дисконтной карты 
         + **phone** `string` - Номер телефона в произвольном формате 
         + **email** `string` - Почтовый адрес
+        + **legalFirstName** `string` - Имя контрагента
+        + **legalMiddleName** `string` - Отчество контрагента
+        + **legalLastName** `string` - Фамилия контрагента
+        + **birthDate** `date` - Дата рождения контрагента
+        + **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+          + Members
+            + MALE
+            + FEMALE
 
 > **`GET`** 
 > /counterparty?search=9039993344
@@ -102,7 +124,12 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
       "name": "Иванов Иван Иванович",
       "discountCardNumber": "MTIzNDU2Nzg5MA",
       "phone": "+7 555 123 4567",
-      "email": "email@example.com"
+      "email": "email@example.com",
+      "legalFirstName":"Иванов",
+      "legalMiddleName":"Иванович",
+      "legalLastName":"Иванов",
+      "birthDate": "2023-07-14 00:00:00",
+      "sex": "MALE"
     }
   ]
 }
@@ -128,6 +155,14 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 + **discountCardNumber** `string` - Номер скидочной карты/счета
 + **phone** `string` - Номер телефона в произвольном формате
 + **email** `string` -  Почтовый адрес  
++ **legalFirstName** `string` - Имя контрагента
++ **legalMiddleName** `string` - Отчество контрагента
++ **legalLastName** `string` - Фамилия контрагента
++ **birthDate** `date` - Дата рождения контрагента
++ **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+  + Members
+    + MALE
+    + FEMALE
 
 #### Атрибуты ответа  
 + **bonusProgram** `object` - Блок информации по баллам 
@@ -163,7 +198,12 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "name": "Иванов Иван Иванович",
   "discountCardNumber": "MTIzNDU2Nzg5MA",
   "phone": "+7 555 123 4567",
-  "email": "email@example.com"
+  "email": "email@example.com",
+  "legalFirstName":"Иванов",
+  "legalMiddleName":"Иванович",
+  "legalLastName":"Иванов",
+  "birthDate": "2023-07-14 00:00:00",
+  "sex": "MALE"
 }
 ```
 > **Response**  

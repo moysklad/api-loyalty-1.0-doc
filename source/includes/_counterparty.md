@@ -225,3 +225,79 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   }
 }
 ```
+
+### Получение кода подтверждения регистрации покупателя
+
+Метод предназначен для запроса кода у внешней бонусной программы с целью подтверждения регистрации покупателя.
+
+#### Атрибуты сущности
+
++ **meta** `object` `Необходимое`
+  + **href** `string` - Идентификатор покупателя `Необходимое`
++ **name** `string` - ФИО покупателя
++ **discountCardNumber** `string` - Номер скидочной карты/счета
++ **phone** `string` - Номер телефона в произвольном формате
++ **email** `string` -  Почтовый адрес
++ **legalFirstName** `string` - Имя контрагента
++ **legalMiddleName** `string` - Отчество контрагента
++ **legalLastName** `string` - Фамилия контрагента
++ **birthDate** `date` - Дата рождения контрагента
++ **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+  + Members
+    + MALE
+    + FEMALE
+
+> **`POST`**
+> /counterparty/verify
+
+> **Request**
+
+> Headers
+
+```
+Content-Type:application/json
+Lognex-Discount-API-Auth-Token:Токен авторизации
+```
+
+> Body
+
+```json
+{
+  "meta": {
+    "href": "https://online.moysklad.ru/api/posap/1.0/entity/counterparty/syncid/276a6f50-7ffd-11e6-8a84-bae50000005"
+  }
+  "name":"Ромашкова Варвара Никитична",
+  "discountCardNumber":"09716398",
+  "phone":"+79011231122",
+  "email":"romashkova@fmail.com",
+  "legalFirstName":"Варвара",
+  "legalMiddleName":"Никитична",
+  "legalLastName":"Ромашкова",
+  "birthDate":"1992-08-01 00:00:00.000",
+  "sex":"FEMALE"
+}
+```
+
+#### Атрибуты ответа
++ **verificationCode** `string` `Необходимое` - Код, отправленный покупателю.
++ **timeForRepeat** `integer` - Время в секундах, по прошествии которого, можно запросить код повторно.
++ **messageForCashier** `string` - Сообщение, которое необходимо отобразить кассиру (140 символов).
+
+> **Response**   
+> 200 (application/json)
+
+> Headers
+
+```
+Content-Type:application/json
+```
+
+> Body
+
+```json
+{
+  "verificationCode":"123456",
+  "timeForRepeat": 60,
+  "messageForCashier": "Код был отправлен на номер покупателя: +79011231122"
+}
+```

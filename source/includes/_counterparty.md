@@ -29,6 +29,11 @@
         + FEMALE
 
 + **syncId** `string` - Уникальный идентификатор, присвоенный покупателю при создании через Кассу МойСклад
++ **statusCheck** `enum[string]` - Статус верификации контрагента через код подтверждения
+  + Members
+    + UNCHECKED - Верификация контрагента по коду подтверждения не была произведена
+    + CHECKED - Верификация контрагента по коду подтверждения была произведена
+    + IGNORE - Верификация контрагента по коду подтверждения была проигнорирована, такой контрагент в любом случае попадает в базу данным МоегоСклада.
 
 > **`POST`** 
 > /counterparty
@@ -66,7 +71,8 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "legalMiddleName": "Иван",
   "legalLastName": "Иванович",
   "birthDate": "2023-07-14 00:00:00",
-  "sex": "MALE"
+  "sex": "MALE",
+  "statusCheck": "CHECKED"
 }
 ```
 
@@ -217,5 +223,101 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "bonusProgram": {
     "agentBonusBalance": 500
   }
+}
+```
+
+### Подготовка к запросу кода подтверждения регистрации покупателя
+
+Если для регистрации покупателя с атрибутом `"statusCheck": "UNCHECKED"` требуется провести подтверждение через код,
+то необходимо в ответе на запрос вернуть ошибку:
+
+> **Response**  
+> 412 (application/json)
+
+```json
+{
+  "errors": [
+    {
+      "error": "Необходимо подтверждение создания покупателя.",
+      "code": 28001,
+      "error_message": "Покупатель должен подтвердить свои данные через код."
+    }
+  ]
+}
+```
+
+### Получение кода подтверждения регистрации покупателя
+
+Метод предназначен для запроса кода у внешней бонусной программы с целью подтверждения регистрации покупателя.
+
+#### Атрибуты сущности
+
++ **meta** `object` `Необходимое`
+  + **href** `string` - Идентификатор покупателя `Необходимое`
++ **name** `string` - ФИО покупателя
++ **discountCardNumber** `string` - Номер скидочной карты/счета
++ **phone** `string` - Номер телефона в произвольном формате
++ **email** `string` -  Почтовый адрес
++ **legalFirstName** `string` - Имя контрагента
++ **legalMiddleName** `string` - Отчество контрагента
++ **legalLastName** `string` - Фамилия контрагента
++ **birthDate** `date` - Дата рождения контрагента
++ **sex** `enum[string]` - Пол контрагента (Мужской - MALE, женский - FEMALE)
+  + Members
+    + MALE
+    + FEMALE
+
+> **`POST`**
+> /counterparty/verify
+
+> **Request**
+
+> Headers
+
+```
+Content-Type:application/json
+Lognex-Discount-API-Auth-Token:Токен авторизации
+```
+
+> Body
+
+```json
+{
+  "meta": {
+    "href": "https://online.moysklad.ru/api/posap/1.0/entity/counterparty/syncid/276a6f50-7ffd-11e6-8a84-bae50000005"
+  },
+  "name":"Ромашкова Варвара Никитична",
+  "discountCardNumber":"09716398",
+  "phone":"+79011231122",
+  "email":"romashkova@fmail.com",
+  "legalFirstName":"Варвара",
+  "legalMiddleName":"Никитична",
+  "legalLastName":"Ромашкова",
+  "birthDate":"1992-08-01 00:00:00.000",
+  "sex":"FEMALE"
+}
+```
+
+#### Атрибуты ответа
++ **verificationCode** `string` `Необходимое` - Код, отправленный покупателю.
++ **timeForRepeat** `integer` - Время в секундах, по прошествии которого, можно запросить код повторно.
++ **messageForCashier** `string` - Сообщение, которое необходимо отобразить кассиру (140 символов).
+
+> **Response**   
+> 200 (application/json)
+
+> Headers
+
+```
+Content-Type:application/json
+```
+
+> Body
+
+```json
+{
+  "verificationCode":"123456",
+  "timeForRepeat": 60,
+  "messageForCashier": "Код был отправлен на номер покупателя: +79011231122"
 }
 ```

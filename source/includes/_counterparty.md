@@ -53,13 +53,13 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 {
   "retailStore": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
       "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
     },
     "name": "Магазин №1"
   },
   "meta": {
-    "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
+    "href": "https://api.moysklad.ru/api/remap/1.2/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
     "id": "276a6f50-7ffd-11e6-8a84-bae50000005"
   },
   "name": "Иванов Иван Иванович",
@@ -192,13 +192,13 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 {
   "retailStore": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
       "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
     },
     "name": "Магазин №1"
   },
   "meta": {
-    "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
+    "href": "https://api.moysklad.ru/api/remap/1.2/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
     "id": "276a6f50-7ffd-11e6-8a84-bae50000005"
   },
   "name": "Иванов Иван Иванович",
@@ -284,7 +284,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 ```json
 {
   "meta": {
-    "href": "https://online.moysklad.ru/api/posap/1.0/entity/counterparty/syncid/276a6f50-7ffd-11e6-8a84-bae50000005"
+    "href": "https://api.moysklad.ru/api/posap/1.0/entity/counterparty/syncid/276a6f50-7ffd-11e6-8a84-bae50000005"
   },
   "name":"Ромашкова Варвара Никитична",
   "discountCardNumber":"09716398",

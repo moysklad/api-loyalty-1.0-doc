@@ -56,7 +56,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 {
   "retailStore": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
       "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
     },
     "name": "Магазин №1"
@@ -79,7 +79,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
       "assortment": {
         "syncId": "f085d67e-6eae-11e6-8a84-bc520403352a",
         "meta": {
-          "href": "https://online.moysklad.ru/api/remap/1.1/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
+          "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
           "id": "9c56720c-e8a7-4fdc-aea4-7104f28207be"
         }
       },

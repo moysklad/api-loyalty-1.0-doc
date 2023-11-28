@@ -71,14 +71,14 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 {
   "retailStore": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
       "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
     },
     "name": "Магазин №1"
   },
   "agent": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
       "id": "276a6f50-7ffd-11e6-8a84-bae50000005"
     },
     "name": "Иванов Иван Иванович",
@@ -95,7 +95,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     {
       "assortment": {
         "meta": {
-          "href": "https://online.moysklad.ru/api/remap/1.1/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
+          "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
           "id": "9c56720c-e8a7-4fdc-aea4-7104f28207be"
         }
       },
@@ -104,7 +104,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
       "sn": [
         {
           "meta": {
-            "href": "https://online.moysklad.ru/api/remap/1.1/entity/thing/2b5eb22f-139e-11e6-9464-e4de00000073",
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/thing/2b5eb22f-139e-11e6-9464-e4de00000073",
             "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
           },
           "name": "7895545"
@@ -178,7 +178,7 @@ Content-Type:application/json
 {
   "agent": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
       "id": "276a6f50-7ffd-11e6-8a84-bae50000005"
     },
     "name": "Иванов Иван Иванович",
@@ -195,7 +195,7 @@ Content-Type:application/json
     {
       "assortment": {
         "meta": {
-          "href": "https://online.moysklad.ru/api/remap/1.1/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
+          "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
           "id": "9c56720c-e8a7-4fdc-aea4-7104f28207be"
         }
       },
@@ -206,7 +206,7 @@ Content-Type:application/json
       "sn": [
         {
           "meta": {
-            "href": "https://online.moysklad.ru/api/remap/1.1/entity/thing/2b5eb22f-139e-11e6-9464-e4de00000073",
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/thing/2b5eb22f-139e-11e6-9464-e4de00000073",
             "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
           },
           "name": "7895545"
@@ -347,7 +347,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 {
   "retailStore": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
       "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
     },
     "name": "Магазин №1"
@@ -360,7 +360,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   },
   "agent": {
     "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/counterparty/276a6f50-7ffd-11e6-8a84-bae50000005",
       "id": "276a6f50-7ffd-11e6-8a84-bae50000005"
     },
     "name": "Иванов Иван Иванович",
@@ -378,7 +378,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
       "assortment": {
         "syncId": "f085d67e-6eae-11e6-8a84-bc520403352a",
         "meta": {
-          "href": "https://online.moysklad.ru/api/remap/1.1/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
+          "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9c56720c-e8a7-4fdc-aea4-7104f28207be",
           "id": "9c56720c-e8a7-4fdc-aea4-7104f28207be"
         }
       },

@@ -104,7 +104,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
       "sn": [
         {
           "meta": {
-            "href": "https://api.moysklad.ru/api/remap/1.2/entity/thing/2b5eb22f-139e-11e6-9464-e4de00000073",
+            "href": "https://online.moysklad.ru/api/posap/1.0/entity/sn/2b5eb22f-139e-11e6-9464-e4de00000073",
             "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
           },
           "name": "7895545"
@@ -206,7 +206,7 @@ Content-Type:application/json
       "sn": [
         {
           "meta": {
-            "href": "https://api.moysklad.ru/api/remap/1.2/entity/thing/2b5eb22f-139e-11e6-9464-e4de00000073",
+            "href": "https://online.moysklad.ru/api/posap/1.0/entity/sn/2b5eb22f-139e-11e6-9464-e4de00000073",
             "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
           },
           "name": "7895545"

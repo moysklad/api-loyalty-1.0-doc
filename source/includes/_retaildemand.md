@@ -233,6 +233,11 @@ Content-Type:application/json
 
 #### Атрибуты запроса
 
++ **retailStore** `object` `Необходимое`
+    + **meta** `object` `Необходимое`
+        + **href** `string` - Идентификатор точки продаж `Необходимое`
+        + **id** `string` - Идентификатор точки продаж `Необходимое`
+    + **name** `string` - Название точки продаж
 + **counterpartyId** `string` `Необходимое` - Идентификатор контрагента, необходимый для синхронизации.
 + **phone** `string` - Телефонный номер покупателя, указанный в карточке контрагента.
 
@@ -252,6 +257,13 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 
 ```json
 {
+  "retailStore": {
+    "meta": {
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
+    },
+    "name": "Магазин №1"
+  },
   "counterpartyId": "75d9ba29-2c4a-4c1c-a3a8-8db00366ac04",
   "phone": "+79011231122"
 } 

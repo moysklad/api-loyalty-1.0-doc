@@ -84,9 +84,10 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 Запрос на поиск существующего покупателя.
 
 #### Параметры
-| Параметр | Описание   |
-|---|---|
-| search | `string` *Example: 9039993344* Строка с поисковым запросом |
+| Параметр      | Описание   |
+|---------------|---|
+| search        | `string` *Example: 9039993344* Строка с поисковым запросом |
+| retailStoreId | `string` *Example: 2b5eb22f-139e-11e6-9464-e4de00000073* Идентификатор точки продаж `Необходимое` |
 
 #### Атрибуты сущности
 + **rows** `array` - Список покупателей
@@ -107,7 +108,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
                 + FEMALE
 
 > **`GET`** 
-> /counterparty?search=9039993344
+> /counterparty?search=9039993344&retailStoreId=2b5eb22f-139e-11e6-9464-e4de00000073
 
 > **Request**
 
@@ -252,6 +253,11 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 
 #### Атрибуты сущности
 
++ **retailStore** `object` `Необходимое`
+  + **meta** `object` `Необходимое`
+    + **href** `string`  - Идентификатор точки продаж `Необходимое`
+    + **id** `string` - Идентификатор точки продаж `Необходимое`
+  + **name** `string` - Название точки продаж
 + **meta** `object` `Необходимое`
   + **href** `string` - Идентификатор покупателя `Необходимое`
 + **name** `string` - ФИО покупателя
@@ -283,6 +289,13 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
 
 ```json
 {
+  "retailStore": {
+    "meta": {
+      "href": "https://api.moysklad.ru/api/remap/1.2/entity/retailstore/2b5eb22f-139e-11e6-9464-e4de00000073",
+      "id": "2b5eb22f-139e-11e6-9464-e4de00000073"
+    },
+    "name": "Магазин №1"
+  },
   "meta": {
     "href": "https://api.moysklad.ru/api/posap/1.0/entity/counterparty/syncid/276a6f50-7ffd-11e6-8a84-bae50000005"
   },

@@ -44,7 +44,12 @@
           + **meta** `object` `Необходимое`
               + **href** `string` - Идентификатор серийного номера  `Необходимое`
               + **id** `string` - Идентификатор серийного номера `Необходимое`
-          + **name** `string` - Серийный номер `string` 
+          + **name** `string` - Серийный номер `string`
+    + **pack** `object` - Упаковка
+        + **id** `UUID` - Уникальный идентификатор упаковки `Необходимое`
+        + **name** `string` - Название упаковки `Необходимое`
+        + **quantity** `double` - Количество `Необходимое`
+        + **barcode** `string` - Штрихкод
 + **bonusProgram** `object` - Блок информации по баллам `object` 
     + **transactionType** `enum[string]` - Тип операции с баллами (начисление - EARNING, списание - SPENDING) 
         + Default: EARNING
@@ -109,7 +114,13 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
           },
           "name": "7895545"
         }
-      ]
+      ],
+      "pack": {
+        "id": "98f87a95-c0b6-11ee-0a80-06e1000360e2",
+        "name": "Бутылка 1,5 л",
+        "quantity": 1.5,
+        "barcode": "2000000051420"
+      }
     }
   ],
   "bonusProgram": {
@@ -149,6 +160,11 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
               + **href**: `string` - Идентификатор серийного номера `Необходимое`
               + **id**: `string` - Идентификатор серийного номера `Необходимое`
           + **name**: `string` - Серийный номер
+    + **pack** `object` - Упаковка
+        + **id** `UUID` - Уникальный идентификатор упаковки `Необходимое`
+        + **name** `string` - Название упаковки `Необходимое`
+        + **quantity** `double` - Количество `Необходимое`
+        + **barcode** `string` - Штрихкод
 + **bonusProgram** `object` - Блок информации по баллам
     + **transactionType**: `enum[string]` - Тип операции с баллами (начисление - EARNING, списание - SPENDING)
         + Default: EARNING
@@ -211,7 +227,13 @@ Content-Type:application/json
           },
           "name": "7895545"
         }
-      ]
+      ],
+      "pack": {
+        "id": "98f87a95-c0b6-11ee-0a80-06e1000360e2",
+        "name": "Бутылка 1,5 л",
+        "quantity": 1.5,
+        "barcode": "2000000051420"
+      }
     }
   ],
   "bonusProgram": {

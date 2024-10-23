@@ -360,8 +360,8 @@ Content-Type:application/json
 + **bonusProgram** `object` - Блок информации по баллам
     + **bonusValueToSpend** `number` - Сколько может быть списано баллов за продажу
     + **bonusValueToEarn** `number` - Сколько может быть начислено баллов за продажу
-+ **cashSum** `number` - Оплачено наличными
-+ **noCashSum** `number` - Оплачено картой
++ **cashSum** `number` - Оплачено наличными (в рублях)
++ **noCashSum** `number` - Оплачено картой (в рублях)
 
 > **`POST`** 
 > /retaildemand

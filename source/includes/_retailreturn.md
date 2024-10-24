@@ -34,8 +34,8 @@
     + **price**: `number` - Цена за единицу (2 зн. после запятой)
     + **discountPercent**: `number` - Процент скидки (2 зн. после запятой)
     + **discountedPrice**: `number` - Цена с учетом скидки (2 зн. после запятой)
-+ **cashSum**: `number` - Возвращено наличными
-+ **noCashSum**: `number` - Возвращено картой
++ **cashSum**: `number` - Возвращено наличными (в рублях)
++ **noCashSum**: `number` - Возвращено картой (в копейках)
 
 
 > **`POST`** 
@@ -90,7 +90,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     }
   ],
   "cashSum": 62.95,
-  "noCashSum": 283.1
+  "noCashSum": 283100.0
 }
 ```
 > **Response**  

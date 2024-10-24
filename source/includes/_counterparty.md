@@ -306,7 +306,7 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
   "legalFirstName":"Варвара",
   "legalMiddleName":"Никитична",
   "legalLastName":"Ромашкова",
-  "birthDate":"1992-08-01 00:00:00.000",
+  "birthDate":"1992-08-01 00:00:00",
   "sex":"FEMALE"
 }
 ```

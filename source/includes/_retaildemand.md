@@ -362,6 +362,10 @@ Content-Type:application/json
     + **bonusValueToEarn** `number` - Сколько может быть начислено баллов за продажу
 + **cashSum** `number` - Оплачено наличными (в рублях)
 + **noCashSum** `number` - Оплачено картой (в рублях)
++ **giftCards** `array` - Список подарочных сертификатов
+    + **id** `string` - Идентификатор сертификата в формате GUID `Необходимое`
+    + **name** `string` - Номер сертификата `Необходимое`
+    + **paymentSum** `number` - Сумма оплаты сертификатом в копейках `Необходимое`
 
 > **`POST`** 
 > /retaildemand
@@ -427,10 +431,21 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     "bonusValueToEarn": 150
   },
   "cashSum": 62.95,
-  "noCashSum": 283.1
+  "noCashSum": 283.1,
+  "giftCards": [
+    {
+      "id": "f085d67e-6eae-21e6-8a84-bc520403352a",
+      "name": "123456",
+      "paymentSum": 1000
+    },
+    {
+      "id": "f275d67e-6eae-21e6-8a84-bc520403352a",
+      "name": "1234567",
+      "paymentSum": 500
+    }
+  ]
 } 
 ```
-
 
 > **Response**  
 > 201

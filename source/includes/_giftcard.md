@@ -33,8 +33,8 @@ Lognex-Discount-API-Auth-Token:Токен авторизации
     + REDEEMED - Сертификат не доступен для использования, так как вся сумма сертификата была полностью использована.
     + INVALID - Сертификат не доступен для продажи или использования по любой причине.
 + **expireDate** `date` - Дата, до которой действует сертификат в формате YYYY-MM-DD HH:mm:ss в UTC
-+ **currentBalance** `integer` - Сколько денег осталось на балансе сертификата в копейках. Обязательно для статусов CAN_BE_USED, PARTIALLY_REDEEMED
-+ **initialBalance** `integer` - Начальная сумма сертификата в копейках
++ **currentBalance** `number` - Сколько денег осталось на балансе сертификата в копейках. Обязательно для статусов CAN_BE_USED, PARTIALLY_REDEEMED
++ **initialBalance** `number` - Начальная сумма сертификата в копейках
 
 > **Response**  
 > 200 (application/json)

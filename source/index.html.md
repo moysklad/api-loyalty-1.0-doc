@@ -14,6 +14,7 @@ includes:
   - counterparty
   - retaildemand
   - retailreturn
+  - giftcard
 
 
 search: true

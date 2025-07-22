@@ -126,15 +126,6 @@ X-Lognex-Galya-Account-Id: идентификатор аккаунт-решен�
       "marks": ["markCode1", "markCode2"]
     }
   ],
-  "cashier": {
-    "meta": {
-      "href": "https://online.moysklad.ru/api/remap/1.2/entity/employee/a4f36276-7b5a-11e6-8a84-bae500000004",
-      "id": "a4f36276-7b5a-11e6-8a84-bae500000004"
-    },
-    "firstName": "Иван",
-    "middleName": "Иванович",
-    "lastName": "Иванов"
-  },
   "vatEnabled": true,
   "vatIncluded": true,
   "customerOrder": {

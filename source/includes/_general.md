@@ -11,7 +11,7 @@
 1. Получить доступ к [Личному кабинету разработчика](https://dev.moysklad.ru/doc/api/vendor/1.0/#lichnyj-kabinet-razrabotchika).
 2.  Создать черновик [серверного решения](https://dev.moysklad.ru/doc/api/vendor/1.0/#serwernye-resheniq).
 3. При создании приложения использовать [VendorAPI](https://dev.moysklad.ru/doc/api/vendor/1.0/#bystryj-start).
-В [дескрипторе](https://dev.moysklad.ru/doc/api/vendor/1.0/#deskriptor-resheniq) приложения  блоке `<fiscalApi>` указать:
+В [дескрипторе](https://dev.moysklad.ru/doc/api/vendor/1.0/#deskriptor-resheniq) приложения в блоке `<fiscalApi>` указать:
    - `endpointBase` - базовый URL на стороне разработчика с имплементацией АПИ
    - `operationTypes` - какие операции касса должна отправлять на фискализацию. Например, к фискализуемым операциям относятся продажа и возврат и не относится внесение денег. Следовательно, необходимо указать только продажу и возврат как операции для фискализации. Внесение денег не будет отправляться на фискализацию.
    - `paymentTypes` - список доступных способов оплаты, чтобы ограничить способ оплаты на кассе. Например, не принимается оплата по qr-коду

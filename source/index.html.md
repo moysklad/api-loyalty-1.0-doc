@@ -11,10 +11,12 @@ toc_footers:
 
 includes:
   - general
-  - counterparty
+  - openshift
   - retaildemand
-  - retailreturn
-  - giftcard
+  - retailsalesreturn
+  - retaildrawercashin
+  - retaildrawercashout
+  - closeshift
 
 
 search: true

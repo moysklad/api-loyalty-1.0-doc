@@ -59,8 +59,8 @@
 
 ```
 Content-Type:application/json
-X-Lognex-Galya-Signature: подпись
-X-Lognex-Galya-Account-Id: идентификатор аккаунт-решение
+X-Lognex-Fiscal-Signature: подпись
+X-Lognex-Fiscal-Account-Id: идентификатор аккаунт-решение
 ```
 
 > Body
